@@ -15,4 +15,3 @@ num = int(input("Digite um número inteiro: "))
 print(f"\nO número informado foi {num}\n")
 
 # 3. Faça um Programa que peça dois números e imprima a soma.
-
