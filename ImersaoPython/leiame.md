@@ -1,0 +1,1 @@
+Aula do dia 05 - parei no video - ponto: 29:50
