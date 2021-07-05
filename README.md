@@ -1,2 +1,2 @@
 # Python_Imersao
- Repositório para exercitar e treinar Python
+ Repositório para fazer exercicios, desenvolver programas e treinar Python
