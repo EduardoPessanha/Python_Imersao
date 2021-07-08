@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/edulinux/Documentos/Python/Python_Imersao/venv"
+VIRTUAL_ENV="/home/edulinux/Documentos/Python/Pythonando/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
