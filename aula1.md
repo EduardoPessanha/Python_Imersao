@@ -16,7 +16,7 @@ venv\Scripts\Activate.ps1
 ```
 Criar o ambiente virtual e ativa-lo, é interessante e importante, pois permite que se instale as bibliotecas
 do projeto neste ambiente virtual e NÃO no Python geral do sistema.
-```
+
 
 Com o ambiente ativo só nos falta instalar as bibliotecas.
 
@@ -28,12 +28,14 @@ Agora precisamos criar a estrutura base do projeto Django, ou seja devemos utili
 
 ```jsx
 django-admin startproject imersaoPython .
+// O "espaço ponto" no final é necessário para que o Django organise todos os arquivos dentro de uma única pasta
+// O Django criará a 'pasta imersaoPython' e o arquivo 'manage.py'
 ```
 
 Feito isso é necessário criar os APP'S no qual será dividido nossa aplicação, sendo assim vamos rodar o comando. (O Django trabalha com aplicações)
 
 ```jsx
-python3 manage.py startapp produto
+python3 manage.py startapp produto // estamos criando a aplicação 'produto'
 ```
 
 Agora dentro da pasta imersaoPython teremos o arquivo [settings.py](http://settings.py) e vamos definir nele algumas configurações que a maioria dos projetos Django devem utilizar.
@@ -76,7 +78,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'produto',
+    'produto', # adicionando a aplicação criada produto - isso deve ser feito todas as vezes que for criada uma nova aplicação
 ]
 
 MIDDLEWARE = [
@@ -170,7 +172,11 @@ SESSION_SAVE_EVERY_REQUEST = False
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ```
-
+ Nota: para rodar o servidor usamos o comando:
+   
+```python
+python manage.py runserver
+```
 Agora com todas as configurações iniciais feitas podemos criar nossa primeira URL para alguma página html. E para isso nós vamos dentro da pasta imersaoPython abrir o arquivo [urls.py](http://urls.py) e criar uma URL apontando para nosso APP produto.
 
 ```python

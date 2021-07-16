@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'produto',     # adicionando a aplicação criada
+    'produto',     # adicionando a aplicação criada - isso deve ser feito todas as vezes que for criada uma nova aplicação
 ]
 
 MIDDLEWARE = [

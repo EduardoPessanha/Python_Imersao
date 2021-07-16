@@ -1,3 +1,27 @@
 {
-    "python.pythonPath": "/home/edulinux/Documentos/Python/Cursos de Python/Imersão Python/venv/bin/python3.8"
+    "python.pythonPath": "/home/edulinux/Documentos/Python/Cursos de Python/Imersão Python/venv/bin/python3.8",
+    "cSpell.ignoreWords": [
+        "a",
+        "adicionando",
+        "aplica",
+        "aplicação",
+        "as",
+        "criada",
+        "deve",
+        "feito",
+        "for",
+        "isso",
+        "nova",
+        "o",
+        "pathlib",
+        "que",
+        "ser",
+        "startapp",
+        "startproject",
+        "todas",
+        "uma",
+        "venv",
+        "vezes"
+    ],
+    "git.ignoreLimitWarning": true
 }
