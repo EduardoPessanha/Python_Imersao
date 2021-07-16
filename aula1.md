@@ -173,7 +173,7 @@ SESSION_SAVE_EVERY_REQUEST = False
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ```
  Nota: para rodar o servidor usamos o comando:
-   
+
 ```python
 python manage.py runserver
 ```
@@ -187,7 +187,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('produto.urls')),
+    path('', include('produto.urls')), # url criada para apontar par o APP produto
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
@@ -197,7 +197,7 @@ Agora dentro do APP produto vamos criar o arquivo urls.py
 
 ```python
 from django.urls import path
-from . import views
+from . import views # O ponto (.) indica a raiz do nosso projeto.
 
 urlpatterns = [
     path("", views.home, name='home'),
